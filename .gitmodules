@@ -1,0 +1,3 @@
+[submodule "lib/src/openlayers"]
+	path = lib/src/openlayers
+	url = https://github.com/kartverket/openlayers
