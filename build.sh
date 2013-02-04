@@ -8,7 +8,7 @@ git submodule update || exit 1
 cd lib/src/anathem
 git pull origin norgeskart || exit 1
 
-for i in $(ls themes); do 
+for i in $(cd themes && ls *.yaml); do 
   export name=$(echo $i|sed -e 's/\..*//g');
   echo "building $name..."
   #mkdir -p ../$name
