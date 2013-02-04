@@ -12,8 +12,9 @@ for i in $(cd themes && ls *.yaml); do
   export name=$(echo $i|sed -e 's/\..*//g');
   echo "building $name..."
   #mkdir -p ../$name
+  echo "python26 anathem.py $name > ../../../htdocs/$name.html;"
   python26 anathem.py $name > ../../../htdocs/$name.html;
-done || exit 1
+done 
 cd ../../..
 
 # copy all anathem libraries into htdocs/js
