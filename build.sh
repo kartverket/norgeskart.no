@@ -30,5 +30,6 @@ cd ../../../..
 
 # copy openlayers build into htdocs/js
 cp lib/src/openlayers/build/OpenLayers.js htdocs/js/openlayers.min.js || exit 1
-
+# copy openlayers themes into htdocs/js/openlayers/theme
+cp -r lib/src/openlayers/theme htdocs || exit 1
 
