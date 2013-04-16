@@ -1,7 +1,7 @@
-norgeskart.no
+http://beta.norgeskart.no
 =============
 
-The joint repository for building the norgeskart map client, mostly drawing on dependencies from other repositories.
+This is the joint repository for building the norgeskart map client, mostly drawing on dependencies from other repositories.
 
 The content of norgeskart.no and this repository is available under the following licenses:
 
@@ -16,7 +16,7 @@ Installation
 
     git clone https://github.com/kartverket/norgeskart.no.git
     cd norgeskart.no
-    ./build.sh 
+    time ./build.sh 
     
 (You may have to adapt the build script to match your python interpreter.)
 
