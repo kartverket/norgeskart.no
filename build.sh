@@ -6,7 +6,7 @@ git submodule update || exit 1
 
 # build every anathem configuration into htdocs
 cd lib/src/anathem
-git pull origin norgeskart || exit 1
+git pull origin fase2 || exit 1
 
 for i in $(cd themes && ls *.yaml); do 
   export name=$(echo $i|sed -e 's/\..*//g');
@@ -23,7 +23,7 @@ cp -u lib/src/anathem/lib/js/*.js htdocs/js/ || exit 1
 
 # build openlayers custom 
 cd lib/src/openlayers
-git pull origin master     || exit 1 
+git pull origin fase2     || exit 1 
 cd build
 python build.py kartverket || exit 1
 cd ../../../..
@@ -32,4 +32,5 @@ cd ../../../..
 cp lib/src/openlayers/build/OpenLayers.js htdocs/js/openlayers.min.js || exit 1
 # copy openlayers themes into htdocs/js/openlayers/theme
 cp -r lib/src/openlayers/theme htdocs || exit 1
+cp -r lib/src/openlayers/img htdocs || exit 1
 
