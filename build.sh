@@ -19,7 +19,7 @@ cd ../../..
 
 # copy all anathem libraries into htdocs/js
 # -u update flag only copies newer files
-cp -u lib/src/anathem/lib/js/*.js htdocs/js/ || exit 1
+cp -ur lib/src/anathem/lib/js/ htdocs/js/ || exit 1
 
 # build openlayers custom 
 cd lib/src/openlayers
