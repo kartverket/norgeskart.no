@@ -25,7 +25,7 @@ cp -ur lib/src/anathem/lib/js/ htdocs/js/ || exit 1
 cd lib/src/openlayers
 git pull origin fase2     || exit 1 
 cd build
-build.sh kartverket || exit 1
+./build.sh kartverket || exit 1
 cd ../../../..
 
 # copy openlayers build into htdocs/js
