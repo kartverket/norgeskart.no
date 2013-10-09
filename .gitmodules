@@ -4,3 +4,6 @@
 [submodule "lib/src/anathem"]
 	path = lib/src/anathem
 	url = https://github.com/kartverket/anathem
+[submodule "lib/src/sosi.js"]
+	path = lib/src/sosi.js
+	url = https://github.com/kartverket/sosi.js
