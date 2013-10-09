@@ -21,6 +21,7 @@ cd ../../..
 # -u update flag only copies newer files
 cp -ur lib/src/anathem/lib/js/ htdocs/js/ || exit 1
 cp -ur lib/src/sosi.js/dist/SOSI.js.min.js htdocs/js/ || exit 1
+cp -ur lib/src/sosi.js/lib/underscore-min.js htdocs/js/ || exit 1
 
 # build openlayers custom 
 cd lib/src/openlayers
