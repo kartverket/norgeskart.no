@@ -19,13 +19,15 @@ cd ../../..
 
 # copy all anathem libraries into htdocs/js
 # -u update flag only copies newer files
-cp -u lib/src/anathem/lib/js/*.js htdocs/js/ || exit 1
+cp -ur lib/src/anathem/lib/js/ htdocs/js/ || exit 1
+cp -ur lib/src/sosi.js/dist/SOSI.min.js htdocs/js/ || exit 1
+cp -ur lib/src/sosi.js/lib/underscore-min.js htdocs/js/ || exit 1
 
 # build openlayers custom 
 cd lib/src/openlayers
 git pull origin master     || exit 1 
 cd build
-python build.py kartverket || exit 1
+./build.sh kartverket || exit 1
 cd ../../../..
 
 # copy openlayers build into htdocs/js
