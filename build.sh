@@ -6,7 +6,7 @@ git submodule update || exit 1
 
 # build every anathem configuration into htdocs
 cd lib/src/anathem
-git pull origin norgeskart || exit 1
+git pull origin tilgjengelighet || exit 1
 
 for i in $(cd themes && ls *.yaml); do 
   export name=$(echo $i|sed -e 's/\..*//g');
@@ -26,7 +26,7 @@ cp -ur lib/src/sosi.js/lib/underscore-min.js htdocs/js/ || exit 1
 
 # build openlayers custom 
 cd lib/src/openlayers
-git pull origin master     || exit 1 
+git pull origin tilgjengelighet     || exit 1
 cd build
 ./build.sh kartverket || exit 1
 cd ../../../..
