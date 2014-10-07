@@ -6,7 +6,7 @@ git submodule update || exit 1
 
 # build every anathem configuration into htdocs
 cd lib/src/anathem
-git pull origin norgeskart || exit 1
+git pull origin nrl || exit 1
 
 for i in $(cd themes && ls *.yaml); do 
   export name=$(echo $i|sed -e 's/\..*//g');
