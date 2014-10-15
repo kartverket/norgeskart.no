@@ -28,7 +28,7 @@ cp -ur lib/src/sosi.js/lib/underscore-min.js htdocs/js/ || exit 1
 cd lib/src/openlayers
 git pull origin GeoPortal || exit 1 
 cd build
-./build.sh kartverket || exit 1
+./build.sh geoportal || exit 1
 cd ../../../..
 
 # copy openlayers build into htdocs/js
