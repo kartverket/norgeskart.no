@@ -26,7 +26,7 @@ cp -ur lib/src/sosi.js/lib/underscore-min.js htdocs/js/ || exit 1
 
 # build openlayers custom 
 cd lib/src/openlayers
-git pull origin master || exit 1
+git pull origin ssr || exit 1
 cd build
 ./build.sh kartverket || exit 1
 cd ../../../..
