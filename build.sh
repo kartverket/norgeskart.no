@@ -22,4 +22,6 @@ cd ../../..
 mkdir -p htdocs/js
 #cp -ur lib/src/anathem/index.manifest htdocs/ || exit 1
 cp -ur lib/src/anathem/lib/js/*.* htdocs/js/ || exit 1
+mkdir -P htdocs/css 
+cp -ur lib/src/anathem/lib/css/*.* htdocs/css/ || exit 1
 cp -ur lib/src/sosi.js/dist/SOSI.min.js htdocs/js/ || exit 1
