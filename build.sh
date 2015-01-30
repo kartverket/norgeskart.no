@@ -12,8 +12,8 @@ for i in $(cd themes && ls *.yaml); do
   export name=$(echo $i|sed -e 's/\..*//g');
   echo "building $name..."
   #mkdir -p ../$name
-  echo "python26 anathem.py $name > ../../../htdocs/$name.html;"
-  python26 anathem.py $name > ../../../htdocs/$name.html;
+  echo "python26 anathem.py $name ../../../htdocs "
+  python26 anathem.py ${name} ../../../htdocs $1;
 done 
 cd ../../..
 
