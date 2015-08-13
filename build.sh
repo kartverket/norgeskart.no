@@ -12,15 +12,17 @@ for i in $(cd themes && ls *.yaml); do
   export name=$(echo $i|sed -e 's/\..*//g');
   echo "building $name..."
   #mkdir -p ../$name
-  echo "python26 anathem.py $name > ../../../htdocs/$name.html;"
-  python26 anathem.py $name > ../../../htdocs/$name.html;
+  echo "python26 anathem.py $name ../../../htdocs"
+  python26 anathem.py $name ../../../htdocs;
 done 
 cd ../../..
 
 # copy all anathem libraries into htdocs/js
 # -u update flag only copies newer files
 mkdir -p htdocs/js
+#cp -ur lib/src/anathem/index.manifest htdocs/ || exit 1
 cp -ur lib/src/anathem/lib/js/*.* htdocs/js/ || exit 1
+cp -ur lib/src/anathem/lib/css/*.* htdocs/css/ || exit 1
 cp -ur lib/src/sosi.js/dist/SOSI.min.js htdocs/js/ || exit 1
 cp -ur lib/src/sosi.js/lib/underscore-min.js htdocs/js/ || exit 1
 
