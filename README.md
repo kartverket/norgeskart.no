@@ -1,4 +1,4 @@
-http://beta.norgeskart.no
+http://norgeskart.no
 =============
 
 This is the joint repository for building the norgeskart map client, mostly drawing on dependencies from other repositories.
