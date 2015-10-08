@@ -1,5 +1,9 @@
 .svn
 
+# Ingnore generated files
+/htdocs
+/lib/src/*.html
+
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode
 
 ## Directory-based project format
