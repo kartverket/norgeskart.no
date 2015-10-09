@@ -1,5 +1,13 @@
 .svn
 
+# Ignore generated files
+/htdocs
+/lib/src/*.html
+
+# Ignore local build files
+buildwocheckout.sh
+deploy.sh
+
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode
 
 ## Directory-based project format
